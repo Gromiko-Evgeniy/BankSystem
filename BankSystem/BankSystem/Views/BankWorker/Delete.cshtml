@@ -1,0 +1,32 @@
+﻿@model User
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>User: @Model.FirstName @Model.LastName</h2>
+    <div>
+        <dl class="dl-horizontal">
+            <dt>Passport number</dt>
+            <dd>@Model.PassportNum</dd>
+
+            <dt>Personal identifier</dt>
+            <dd>@Model.PersonalID</dd>
+
+            <dt>Phone number</dt>
+            <dd>@Model.PhoneNumber</dd>
+
+            <dt>E-mail</dt>
+            <dd>@Model.Email</dd>
+        </dl>
+    </div>
+    <form asp-controller="Client" asp-action="Delete" method="post">
+        <div class="form-group">
+            <input type="submit" class="btn" value="Delete" />
+        </div>
+    </form>
+</body>
+</html>

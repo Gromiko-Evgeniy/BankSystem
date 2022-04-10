@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Bank>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bank account registration</title>
+</head>
+<body class="p-2">
+    <h3 class="text-center">Bank account registration</h3>
+    <h3 class="text-center">Choose bank</h3>
+    <form asp-action="AddBankAccount" asp-controller="BankAccount" method="post">
+
+
+
+        <p>
+        <label for="bank">Choose bank:</label>
+        <select name="bankName">
+
+            @foreach (var bank in @Model) 
+            {
+                <option value=@bank.LegalName>@bank.LegalName</option>
+            }
+            </select>
+        </p>
+
+        <div class="text-center">
+            <button type="submit" class="btn">Add</button>
+            <a class="btn" asp-action="ClientBankAccounts" asp-controller="Client">Back</a>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿@model LoginData
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body class="p-1">
+    <form asp-action="ClientLogin" asp-controller="Client" method="post">
+        <div asp-validation-summary="All"></div>
+        <hЗ class="text-center">Sign up</hЗ>
+        <div>@ViewBag.ErrorMessage</div>
+        <div class="form-group">
+            <label asp-for="Email">Email:</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Password:</label>
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn">Submit</button>
+            <a asp-action="Welcome" asp-controller="Start">Back</a>
+        </div>
+    </form>
+</body>
+</html>

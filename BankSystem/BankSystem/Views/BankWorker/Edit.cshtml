@@ -1,0 +1,44 @@
+﻿@model BankSystem.Models.User
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edition</title>
+    <!--link rel="stylesheet" href="/lib/bootstra/dist/css/bootstrap.min.css" /-->
+</head>
+<body class="p-2">
+    <hЗ class="text-center">Change information</hЗ>
+    <form asp-action="Edit" asp-controller="Client" asp-route-id="Model.Id">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="FirstName" class="control-label">First name:</label>
+            <input asp-for="FirstName" class="control-label" />
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName" class="control-label">Last name:</label>
+            <input asp-for="LastName" class="control-label" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PassportNum" class="control-label">Passport number:</label>
+            <input asp-for="PassportNum" class="control-label" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PersonalID" class="control-label">Personal ID:</label>
+            <input asp-for="PersonalID" class="control-label" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber" class="control-label">Phone number:</label>
+            <input asp-for="PhoneNumber" class="control-label" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">E-mail:</label>
+            <input asp-for="Email" class="control-label" />
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn">Save</button>
+            <button type="reset" class="btn">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

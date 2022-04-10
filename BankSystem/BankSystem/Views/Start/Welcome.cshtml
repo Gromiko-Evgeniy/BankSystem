@@ -1,0 +1,31 @@
+﻿@model WelcomeResult
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcowe</title>
+</head>
+<body class="p-1">
+    <form asp-action="Welcome" asp-controller="Start" method="post">
+        <hЗ class="text-center">Welcome</hЗ>
+        <div class="form-group">
+            <label>Are you client or worker?</label>
+            <select class="form-control" asp-for=@Model.IsClient>
+                <option value="true">Client</option>
+                <option value="false">Worker</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Do you want to sign in or sign up??</label>
+            <select class="form-control" asp-for=@Model.IsRegistered>
+                <option value="true">Sign in</option>
+                <option value="false">Sign up</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

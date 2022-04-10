@@ -1,0 +1,35 @@
+﻿@model IEnumerable<BankSystem.Models.User>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>All Clients</title>
+</head>
+<body class="p-1">
+    <hЗ class="text-center">All users</hЗ>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr> <td>First name</td> <td>Last name</td> <td>Passport number</td></tr>
+        </thead>
+        <tbody>
+            @foreach (var c in @Model)
+            {
+                <tr>
+                    <td>@c.FirstName</td>
+                    <td>@c.LastName</td>
+                    <td>@c.PassportNum</td>
+                    <td>
+                        <a asp-action="Details" asp-controller="User" asp-route-id="c.Id">Details</a> |
+                        <a asp-action="Edit" asp-controller="User" asp-route-id="c.Id">Edit</a> |
+                        <a asp-action="Delete" asp-controller="User" asp-route-id="c.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="text-center">
+        <a class="btn btn-primary" asp-action="AddUser" asp-controller="Client">Add New User</a>
+    </div>
+</body>
+</html>

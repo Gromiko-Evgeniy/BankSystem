@@ -1,0 +1,17 @@
+﻿@model User
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home page</title>
+    <!--link rel="stylesheet" href="/lib/bootstra/dist/css/bootstrap.min.css" /-->
+</head>
+<body class="p-2">
+    <div>Hello, @Model.FirstName @Model.LastName</div>
+    <div>It,s your home page</div>
+    <a class="btn btn-primary" asp-action="ClientBankAccounts" asp-controller="Client">Bank accounts</a>
+    <a class="btn btn-primary" asp-action="Welcome" asp-controller="Start">Return to the first page</a>
+</body>
+</html>
+

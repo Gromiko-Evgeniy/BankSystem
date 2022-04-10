@@ -1,0 +1,24 @@
+﻿@model BankAccount
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+    <h2>BankAccount</h2>
+    <h3>Bank:@Model.Bank.LegalName</h3>
+    <h3>Number:</h3>
+    <h3>Money:@Model.MoneyCount</h3>
+
+    <a asp-action="GetCash" asp-controller="BankAccount" asp-route-id=@Model>Get cash</a>
+    <a asp-action="PutMoney" asp-controller="BankAccount" asp-route-id=@Model>Put money</a>
+    <a asp-action="Transfer" asp-controller="BankAccount" asp-route-id=@Model>Transfer</a>
+    <a asp-action="FreezBankAccount" asp-controller="BankAccount" asp-route-id=@Model>Freez</a>
+    <a asp-action="DeleteBankAccount" asp-controller="BankAccount" asp-route-id=@Model>Delete</a>
+
+    <a asp-action="Welcome" asp-controller="Start">Back to bank system menu</a>
+</body>
+</html>

@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BankSystem
+build_property.RootNamespace = BankSystem
+build_property.ProjectDir = D:\Study\Univer\OOP\LW_1\BankSystem\BankSystem\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Study\Univer\OOP\LW_1\BankSystem\BankSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankAccount/AddBankAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQWRkQmFua0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankAccount/BankAccountInteraction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcQmFua0FjY291bnRJbnRlcmFjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankAccount/DeleteBankAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua0FjY291bnRcRGVsZXRlQmFua0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankWorker/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1dvcmtlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankWorker/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1dvcmtlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankWorker/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1dvcmtlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/BankWorker/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1dvcmtlclxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/Client/ClientBankAccounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudEJhbmtBY2NvdW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/Client/ClientHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudEhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/Client/ClientLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/Client/CLientRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENMaWVudFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/Start/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRcV2VsY29tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/Univer/OOP/LW_1/BankSystem/BankSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

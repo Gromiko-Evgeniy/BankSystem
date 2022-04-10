@@ -1,0 +1,18 @@
+﻿@model BankAccount
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Account: @Model.Bank.LegalName </h2>
+
+    <form asp-controller="BankAccount" asp-action="DeleteBankAccount" method="post">
+        <div class="form-group">
+            <input type="submit" class="btn" value="Delete" />
+        </div>
+    </form>
+</body>
+</html>

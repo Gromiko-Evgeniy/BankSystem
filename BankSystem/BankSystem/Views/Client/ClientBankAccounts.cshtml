@@ -1,0 +1,47 @@
+﻿@model IEnumerable<BankAccount>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>All Clients</title>
+</head>
+<body class="p-1">
+    <hЗ class="text-center">All bank accounts</hЗ>
+
+    @if (@Model == null)
+    {
+        <div>"You have no bank accounts"</div>
+        <a asp-action="AddBankAccount" asp-controller="BankAccount">Add bank account</a>
+        <a asp-action="ClientHome" asp-controller="Client">Return to home page</a>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr> <td>Bank</td> <td>Account ID</td> <td>Money</td></tr>
+            </thead>
+            <tbody>
+                @foreach (var ba in @Model)
+                {
+                    <tr>
+                        @if (ba.Bank != null)
+                        {
+                            <td>@ba.Bank.LegalName</td>
+                        }
+                        else{ <td>NoName (null)</td>}
+                        <td>BankAccID!!!</td>
+                        <td>@ba.MoneyCount</td>
+                        <td>
+                            <a asp-action="BankAccountInteraction" asp-controller="BankAccount" asp-route-id="@ba">Details</a>
+                            <a asp-action="DeleteBankAccount" asp-controller="BankAccount" asp-route-id="@ba">Delete</a>
+                        </td>
+                    </tr>
+                }
+                <tr><td><a asp-action="AddBankAccount" asp-controller="BankAccount">Add account</a></td></tr>
+                <tr><td><a asp-action="ClientHome" asp-controller="Client">Back</a></td></tr>
+            </tbody>
+        </table>
+    }
+</body>
+</html>
